@@ -1,0 +1,26 @@
+.mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#k{
+    color: aliceblue;
+    width:150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;  
+}
+a{
+    text-decoration: underline;
+}
+#a1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
