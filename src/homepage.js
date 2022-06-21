@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./homepage.css"
-import Weather from "./weather";
+
 
 function Homepage() {
   const [movies,setMovies] = useState([])
@@ -20,7 +20,7 @@ function Homepage() {
   },[])
   return (
     <div className="mainDiv">
-                     <Weather/>
+                     
           {movies.map((item,index)=>(
             <li  key={index}>
                    <a href={item.imdbUrl} target="_blank" > <img  src={item.poster}  width="150px" height="200px"/> </a>

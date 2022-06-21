@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
-import { Switch } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
-import { Route } from "react-router-dom";
+import { Link , Route , BrowserRouter , Switch} from "react-router-dom";
 import "./App.css"
 import Search from "./search";
 import Name from "./about";
@@ -13,10 +10,10 @@ function App() {
   const dispatch = useDispatch()
   return ( 
     <div className="maindiv">
-          <button onClick={()=>dispatch({type:"increment"})}>increment</button>
-          {counter}
+          <button onClick={()=>dispatch({type:"decrement"})}>{counter}</button>
+         <div className="">{counter}</div> 
           <BrowserRouter>
-         <div className="width"> <a href="/" id="l" ><img src="https://movie.ge/theme/assets/img/logo.svg"  width="200px"/></a></div> 
+            <div className="width"> <a href="/" id="l" ><img src="https://movie.ge/theme/assets/img/logo.svg" alt="logo" width="200px"/></a></div> 
                
                      <Link to="/" onClick={fetch} ><div className="left"> Home Page</div></Link>
                      <Link to="/about"><div className="left">About</div></Link>
