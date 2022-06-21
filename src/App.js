@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch()
   return ( 
     <div className="maindiv">
-          <button onClick={()=>dispatch({type:"decrement"})}>{counter}</button>
+          <button onClick={()=>dispatch({type:"decrement"})}>decrement</button>
          <div className="">{counter}</div> 
           <BrowserRouter>
             <div className="width"> <a href="/" id="l" ><img src="https://movie.ge/theme/assets/img/logo.svg" alt="logo" width="200px"/></a></div> 
